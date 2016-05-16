@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/unslider.css">
+	<link rel="stylesheet" href="css/unslider-dots.css">
+</head>
+
+<body>
+	<div class="picBanner">
+		<ul>
+			<li><img src="../images/title1.jpg" alt="标题1"></li>
+			<li><img src="../images/title2.jpg" alt="标题1"></li>
+			<li><img src="../images/title3.jpg" alt="标题1"></li>
+			<li><img src="../images/title4.jpg" alt="标题1"></li>
+
+		</ul>
+	</div>
+	<script src="../js/jquery.min.js"></script>
+	<script src="js/unslider-min.js"></script>
+	<script>
+		jQuery(document).ready(function($){
+	$('.picBanner').unslider(
+       { arrows: {
+	//  Unslider default behaviour
+	prev: '<a class="unslider-arrow prev">Previous slide</a>',
+	next: '<a class="unslider-arrow next">Next slide</a>',
+
+	//  Example: generate buttons to start/stop the slider autoplaying
+	stop: '<a class="unslider-pause" />',
+	start: '<a class="unslider-play">Play</a>'
+}
+       }
+        
+    );
+});
+	</script>
+</body>
+
+</html>
